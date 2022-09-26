@@ -25,7 +25,6 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      {/* <Header title="Call a Friend" tagline="Your friendly contact app" /> */}
 
       <Container maxWidth="lg" sx={{ marginY: "3rem" }}>
         <Grid container rowSpacing={1} columnSpacing={4}>
@@ -35,6 +34,7 @@ const App = () => {
               <Contact key={contact.email} data={contact} />
             ))}
           </Grid>
+
           <Grid item xs={6}>
             <h2>Add new contact</h2>
             <ContactForm addContact={addContact} />
