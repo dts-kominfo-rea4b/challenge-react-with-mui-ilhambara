@@ -27,6 +27,7 @@ const Contact = ({ data }) => {
           src={data.photo ? data.photo : `http://placekitten.com/${randomImg}`}
         />
       </Box>
+
       <Stack spacing={1} marginLeft={4} textAlign="left">
         <Typography variant="h2" fontSize="1.25rem" fontWeight="bold">
           {data.name}

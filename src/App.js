@@ -19,7 +19,7 @@ const App = () => {
   const [contacts, setContacts] = useState(contactsJSON);
 
   const addContact = (newContact) => {
-    setContacts([...contacts, newContact]);
+    setContacts([newContact, ...contacts]);
   };
 
   return (
